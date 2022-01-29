@@ -1,0 +1,246 @@
+1.0.3.2
+
+1.0.3.1
+Tweaks:
+- Tiyanki Pest Control not as popular among materialists and egalitarians
+
+1.0.3
+Updated for 3.2
+
+Additions:
+- Research Cooperative are available to hive minds with research orriented civics
+
+Bug Fixes:
+- When under the Galactic Emperor, you cannot move the Galactic Senate
+
+1.0.2.1
+Tweaks:
+- Recently Conquered modifier only gives 10% malus (from 15%)
+- Tweaked ai weight for banning sentient (non-organic) slave trade
+
+Bug Fixes:
+- Fixed Hostile Takeover and Market Expropriation only being valid against the emperor
+- Fixed Hostile Takover and Market Expropriation always failing
+- Requirements to propose ascension resolutions are now clearer
+- The Emergency Powers resolution should now show up properly
+
+1.0.2
+Updated for 3.1.1
+Additions:
+- New Operation: Hostile Takeover
+- New Operation: Market Expropriation
+- New envoy event
+- Extort Favors give influence, can sacrifice diplomacy asset for increased effects
+- Smear Campaign targets allies and vassals first
+- Smear Campaign decreases federation cohesion by an additional 50%
+- Going along with a smear campaign has a chance of granting an asset against the instigating empire
+- Spark Diplomatic Incident now has lower requirements
+- Negative envoy events hurt opinion more if you have good relations with the other empire
+- Negative envoy events now costs some influence, or have some other negative effect
+
+Tweaks:
+- Tweaked resolution weights
+- Finding a host for the galactic community will increase opinion between all members
+- Xenomedical Research Cooperative: with Expanded Pops, healthcare workers give +5% habitability (up from 2.5%)
+- Counterintelligence Operations, can now spend an asset to end an operation (requires a smooth exit)
+- Republic Legions use Imperial Legion army names
+- Several new opinion modifiers now require a minimum intelligence
+
+Bug Fixes:
+- Several new operations will now generate menace
+- Fixed War Propaganda operation not informing target
+- Fixed logic error with destroying assets in certain operations
+- Fixed mutual assistance not increasing opinion properly
+- Fixed broken localization
+- Accepting money from lobbyists is now capped
+- Fixed bug with Study Defenses operation not being destroyed when concluded
+
+Removals:
+- Changes to Expel Corps moved back to Expanded Pops
+
+1.0.1
+Tweaks:
+- Invading primitives only kills up to 6 pops
+- Galactic Headquarters moved to the Galactic Reforms category, no longer a focus, no longer gives a bonus to all members
+
+1.0
+Initial Steam Release
+Additions:
+- New Operation: Study Defenses
+- New Operation random events
+- Ported over diplomacy economy from expanded pops
+- Universal Prosperity Mandate, industrial worlds give +10% consumer goods
+
+Tweaks:
+- Changes to Galactic Healthcare to take into account changes to Expanded Pops
+- Pan-galactic Migration now always give free migration treaties between members
+- Sabotage Starbase is more likely to target military infrastructure if you are at war with target
+- Industrial Sabotage, War Propaganda, and Foment Unrest cost less
+- AI will take some economic factors into account when voting on resolutions
+
+Bug Fixes:
+- Added localization for having very strong or weak encryption
+- Environmental Ordinance Waivers also effects habitat, city, machine, and hive world districts
+
+0.6
+Additions:
+- New Operation: War Propaganda
+- New Operation: Foment Unrest
+- Added Republic Science Academy / Imperial Science Directory resolutions
+- AI will try to vassalize and attack weakened empires more often
+- Embassy Buildings give +1 bureaucrat job per level
+
+Tweaks:
+- Project Gaia now gives +1 building slots on most planets
+- Project Gaia gives +5 stability to city, ringworlds, and hive worlds, instead of +4 farming districts and +1 building slot
+- Project Gaia gives +4 housing to habitats instead of +4 farming districts
+- Galactic Preserve also gives +10 unity
+- Introduce Galactic Standard gives +2% empire size from pops instead of -2% energy production
+- Influence Campaign, number of pops who change ethics scale with number of pops that the target has
+- Counterintelligence operations reduce your spy network by only 10-15 upon conclusion
+- Xeno-Trafficking / Abolition only steals 3 pops
+- Xeno-Trafficking / Abolition will deposit pops on a random planet with free jobs and housing. If a suitable planet cannot be found, they'll be deposited on your capital
+- Put the new operations into a more logical order
+- AI is less likely to give a criminal syndicate an imperial charter (unless they are also a criminal syndicate)
+
+Bug Fixes:
+- Federations now get intel on each other, as they are supposed to
+- Devastation will increase, not decrease, upkeep from jobs
+- Improved trigger for the "Enslaving our Citizens" modifier
+- Fixed broken trigger in the Xeno-Trafficking / Abolition operations
+- Fixed missing description for Disband the Republic Army
+
+Removals:
+- Removed changes to ethic divergence (they were a relic of a time when pops changing ethics was basically broken)
+
+0.5
+Additions:
+- Galactic Commerce gives higher trade value
+- Galactic Commerce bureaucrat upkeep increased gradually across all levels, also increases synapse drone upkeep by half as much
+- Leveraged Privateering / Holistic Asset Coordination gives -10 / -25 crime
+- Profit Maximization Engines gives +1 energy from researcher jobs, no longer provides merchant or maintenance drone jobs
+- Project Cornucopia gives +2 district slots, +200 waste with Ecology Mod
+- Greater Good, last three levels give -5% housing usage each
+- Greater Good, last three levels decreases empire size from pops by -10% each
+- Ecological Protection, Terraforming Cost increase spread out across last three levels
+- Ecological Protection, gives -5% consumer good upkeep per level
+- Alloy and mineral penalties from Environmental Control Board and The Paradise Initiative have been cut in half
+- Project Gaia gives +4 max farming districts
+- Unchained Knowledge, last 4 levels give +10% researcher output each, but also +15% researcher upkeep each
+- Astral Studies also gives +1 hyperlane detection
+- Extradimensional experimentation zro upkeep cut in half
+- Divinity of Life gives +5% biological happiness per level, no longer decreases consumer good consumption
+- A Defined Purpose gives -5% amenities usage
+- Mutual Defense gives +20 naval capacity per level (up from 10)
+- Last Resort Doctrine / Demobilization Initiative gives -10% / -25% naval capacity
+- Last Resort Doctrine / Demobilization Initiative gives +10% / +25% fire rate in home territory
+- Law and Order, last three levels decreases empire size from colonies by -10% each
+- Domestic Security Bill also gives -20 crime (with expanded pops, -5 crime from enforcers instead)
+- With expanded pops, Domestic Security Bill increases upkeep of enforcers by 0.5 energy
+- Without expanded pops, Domestic Security Bill gives -1% energy production
+- Galactic Cooperation gives +5% trust growth per level
+- Universal Healthcare Mandate, with expanded pops, healthcare workers also give +5% pop assembly
+- Infiltration from empire sprawl has been significantly increased
+- Invading primitives kills off up to 8 primitive pops
+
+Tweaks:
+- Greater Good, last three levels decreases slave happiness by -5%/-15%/-25% (was -5%/-25%/-25%)
+- Galactic Preserve gives +25% society research (up from 10%)
+- Project Gaia gives +50% immigration pull (up from 25%)
+- With Ecology Mod, Project Gaia reduces waste directly, no longer gives ranger jobs
+
+Bug Fixes:
+- Can target gestalts with Industrial Sabotage
+
+0.4
+Additions:
+- New Operation: Industrial Sabotage
+- Sleeper Agents, can spend a technology asset to gain -2 operation difficulty
+- Can sometimes get non-gestalt assets from gestalts (in particular, from Rogue Servitors, Driven Assimilators, and certain civics from Expanded Pops)
+
+Tweaks:
+- Smear Campaign only lets you chose between three targets (turns out operation events cannot show you more than three options)
+- Counterintelligence operations are more expensive
+- Expropriation status quo against criminal syndicates destroys branch offices under 50 crime (was 25)
+
+Bug Fixes:
+- Fixed broken trigger in the Surprise Inspection event
+- Fixed influence campaign so all options always decreases spy power
+- Fixed error in first Xeno-Abolition event
+- Fixed some odd behavior in one of the envoy events
+- Fixed some missing and broken localizations around the Galactic Community
+- Fixed Campaigning for Chancellorship always being available
+
+0.3
+Additions:
+- Can form the Galactic Republic
+- New Galactic Republic resolutions
+- New Operation: Counterintelligence
+- New Operation: Influence Campaign
+- New Operation: Xeno-Trafficking
+- New Operation: Xeno-Abolition
+- New operation random events
+- Sabotage Starbase now destroys up to three buildings and modules of the same type
+- Sabotage Starbase now adds a temporary debuff to shields, weapons damage, and fire rate
+- Sabotage Starbase now has additional types collateral damage you can get
+- Sabotage Starbase, when given the option to destroy defense platforms, you now destroy three platforms instead of one
+- Smear campaigns give you up to six possible targets to chose from (up from 3)
+- Smear campaign usually has a bigger opinion effect against friends of target
+- Most espionage-related opinions now stack
+- AI will use more aggressive operations when at war and against rivals
+- AI may actually rebel and scheme against the emperor
+- GALPOL and ISD makes it slightly easier for the custodian/emperor to gather information and assets from members
+- Cooperative Research Channels resolution makes it slightly easier to steal technologies from members
+- Anti-Piracy Initiative makes it slightly harder to fund privateers
+- Anti-Piracy Initiative gives +25% piracy suppression
+- Declaring an innocent empire a crisis awards menace points to the proposer
+- First contact is slower
+- Communication spread events happen less frequently
+
+Tweaks:
+- GALPOL ads +2 encryption (up from +1)
+- Toned down changes to defines related to pops changing ethics
+- Improved icon for the Galactic Cooperation resolutions
+
+Bug Fixes:
+- Fixed being in breach of healthcare resolutions not affecting opinion
+- Fixed some resolutions not upsetting factions when passed or repealed
+
+0.2
+Updated to 3.0
+
+Additions:
+- New xenophile resolution tree
+- New healthcare resolution tree
+- Can choose seat of galactic senate (similar to founding galactic market)
+- Resolution to protect space crystals
+- With Expanded Spaceborn active, you can also protect void clouds and mining drones
+- Profit Maximization Engines gives +1 ruler political power
+- Profit Maximization Engines gives +1 merchant job (+3 maintenance drone jobs if gestalt)
+- Paradise Initiative unlocks the Project Gaia planetary decision
+- With my Ecology + Expanded Pops patch, The Paradise Initiative gives +10% unity from jobs to Nature Planets
+- GALPOL ads +1 encryption
+- GALPOL adds new random operation event
+- Repealing the Amoeba Conservation Act will restore hostility to towards all nations that cannot normally pacify amoebas
+- Expropriation wars statue quo changed to give some benefit to the megacorp
+- Empires will like you less if you are in breach of their favorite galactic resolutions
+- Thrall Worlds give +5% slave production
+- Warscore modified to give more weight to planet occupations and superior fleets
+- Arm Privateers now spawns 3 pirate fleets
+
+Tweaks:
+- Personnel Management now uses the Automatic Resettlement Chance modifier
+- Informed Governance now gives +10% worker production (was +5%)
+- Diplo Weight from fleet increased slightly (still not as high as vanilla)
+- Tweaked opinion modifiers
+
+Bug Fixes:
+- No longer able to propose the Tiyanki Conservation Act if the Amoeba Conservation Act is active
+
+Removals:
+- No longer slows down improve and harm relations (now redundant)
+- No longer modifies war exhaustion.
+- Extradimensional Experimentation Resolution no longer unlocks the Zro Distillation techs (now redundant)
+
+0.1
+Initial Alpha Release

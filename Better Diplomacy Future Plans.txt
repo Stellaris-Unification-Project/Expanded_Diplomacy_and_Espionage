@@ -1,0 +1,178 @@
+Diplomacy:
+- Militarist megacorps can accept money to join wars, corp must be at peace
+- Diplomatic Edicts:
+	- Diplomatic Outreach, used to make two people you are raising opinion of or in federation with like each other more, rare chance to end rivalries
+	- Seek War relief, sends envoy asking for resources and intervention in a defensive war, or offensive war against a homicidal enemy, temporarily suffers -1 envoy
+
+Galactic Community
+- Xenophobe (isolationist) resolution path
+	Level 1: Data Security Accords
+		-20% diplo weight from techs
+		+2 encryption
+		-1 codebreaking
+
+	Level 2:
+
+	Level 3:
+		-20% diplo weight from pops
+		-x% pop growth from immigration
+		Refugees Welcome policy banned
+		
+	Level 4: Strong Alone
+		-20% diplo weight from pops
+		+25% diplomatic weight if you are not in a federation or have a defensive pact
+		Free non-aggression pacts
+		Cooperative Diplo Stance banned
+		Maybe: Citizen-Only refugee policy banned
+
+	Level 5: Galactic Purity
+		-20% diplo weight from pops
+		+25% pop growth
+		Pops of your species living abroad are encouraged to move back to your empire (details TBD)
+		Maybe: Unlocks edict to expel up to 10 xeno pops, granting a large amount of influence and a temp buff to diplomatic weight and pop growth
+		Maybe: Migration Treaties banned
+		Xeno-Compatibility banned
+			-edict to stop creation of new sub-species creation and be in compliance, but comes with a malus to pop growth and happiness
+
+- New galactic republic resolutions
+	- universal currency, effects TBD (also create imperial version)
+	- create a judiciary (imperial and republic), effects TBD
+	- Engineering Guild, +25% engineering research, +1 megastructure build capacity, +20% researcher upkeep
+	- Galactic Free Trade Agreement, requires Galactic Trade Organization, +10% trade value, gives free commercial pacts between members, +10% consumer goods pop upkeep
+	
+- Worlds Fair, spend energy, gain influence and diplo weight from tech, unique events
+	- supported by materialists, xenophiles, and machines, opposed by spiritualists and xenophobes
+
+- Xenophile FE meddles in the galactic community, demands you vote for or against certain resolutions, gets snippy if they don't get the result they wanted, gives temp diplo weight bonus and favors on random community members
+- Likes:
+	- Greater Good 3 and 4 (likes banning slavery)
+	- Rules of war 2 (likes banning purges)
+	- Ecology resolutions (which ones?)
+	- Galactic Cooperation 3 and 5 (likes that it protects lifeforms)
+	- No trading of sapient organic slaves
+	- Tiyanki conservation
+	- repealing any of the below resolutions
+- Dislikes:
+	- repealing any of the above resolutions
+	- Industrial Development 5 (dislikes project cornucopia)
+	- Tiyanki pest control
+	
+- The Materialist FE may also sometimes meddles
+- Likes:
+	- Unchained Knowledge 1-4
+	- Repealing any of the below resolutions
+- Dislikes:
+	- repealing any of the above resolutions
+	- Unchained Knowledge 5 (thinks its too dangerous)
+	- Divinity of Life 4 and 5 (dislikes GC shitting on robots)
+
+Envoys Events
+- Renounce claims (unilaterally or mutually)
+- Raising opinion with someone who doesn't like you: Foreign minister demands bribe before working with envoy. Pay it, demand apology, try to work through unofficial channels (negative envoy_improve_relations_mult), use favors
+- Asks for help in war, various effects if message leaked
+- Refugees claim asylum
+- Envoy smooths over border friction
+
+- Diplomatic Events
+	- rebels from low-stability planet flee into your territory, chased by foreign military, causes diplomatic incident
+	- civilian ship attacked by parties at war, owner might get involved in war
+	- civilian ship blows up, blamed on neighbor
+	
+War:
+	- Stop Atrocities cb, which rescues pops from being purged: imposes no purging and no slavery policies on victory, rescues some number of pops on status quo
+		- Requires not a slaver or purger, generally only used by xenophiles and egalitarians
+	- Free Primitives cb, liberates primitive worlds, grant them neighboring systems
+		- Requires Indigenous Protection Protocols resolution
+	- Special cb to free slaves of your main species, requires slavery outlawed
+	- Can join in a war
+
+War Events:
+	- Armies may spawn on occupied planets without high stability
+	- Insurgents may attack forces for a time after war, reducing stability, causing devastation, killing pops of your empire
+	- Fleets may defect when rebellion starts
+	- Rebels may hire mercs, or be gifted fleets from sympathetic empires
+
+
+Espionage
+New Operations
+- Disinformation Campaign, reduces intel and decrease max infiltration level
+	- note: COUNTER_INTEL_GAIN_SPEED changes how fast empires gain intel on you
+	- Manipulation / Diplomacy, only 2 stages
+	- Can spend manipulation asset to increases effects
+	- Chance target can realize what is happening and salvage some intel
+	- Available in Base Game
+- Undermine Claim
+	- Manipulation / Diplomacy
+	- Removes a claim from one of your systems
+- Forge Claim
+	- Manipulation / Diplomacy
+	- Gain a claim on one of their systems (system must be next to our borders or next to a system we have already claimed
+- Operation to contact one empire that target has contact with
+	- Subterfuge / Technology, only two stages
+	- Available in Base Game
+- Hack Robots
+	- Sabotage / Technology
+	- Choice of decreasing robot job output or robot production speed
+	- Can sacrifice sabotage asset to destroy robots
+	- Harder if they have synths or are machines, unless you also have synths or are a machine
+- Market Manipulation, increases market fee, decreases trade value
+	- Manipulation / Economy
+	- Also gives a large lump sum of energy credits
+	- can gain additional resources by spending a Laborer (food and minerals), Economist (consumer goods, energy if gestalt), Veteran (alloys), Bureaucrat (energy), Pop Icon (influence) or Newscaster asset (unity)
+	- without smooth exit, cannot use asset, less effect
+	- rewards scale with num of pops?
+	- gestalts are immune
+- Operation to increase empire sprawl and bureaucrat/synapse drone upkeep
+	- Subterfuge / Government
+	- Efficient Bureaucracy is immune (or maybe byzantine? or both?)
+	- Can spend subterfuge asset to increase infiltration speed
+	- Next patch has unity rework, hold off until that is done
+- False Flag, gives unfriendly empire a cb against target and large opinion hit
+	- Provocation / Diplomacy
+	- without smooth exit, empire knows you were trying to bait it into attacking your target, can go along, expose you (gets cb on you), or do nothing
+- Leviathan Lure, temporarily lures a nearby Leviathan into their systems
+	- Provocation / Technology
+	- Valid Targets include: Automated Dreadnought, Ether Drake, Spectral Wraith, Stellar Devourer, Tiyanki Matriarch, Voidspawn, Scavenger Bot
+- Provoke Marauders, causes nearby marauders to send raiding fleets
+	- Provocation / Military
+	- Rare chance to fail and provoke them against yourself
+	- Cannot do when khan is active
+- Operation to slow down megastructure construction
+	- Sabotage / Technology
+- Operation to reduce an empire's diplomatic weight
+	- Sabotage / Diplomacy
+	- if you do well, chance to damage relations with others (diplomacy), reduce influence (government), decrease happiness / increase deviancy (economy)
+- Operation to weaken one of their fleets, decreasing fire rate and increasing maintenance costs
+	- Sabotage / Military
+	
+- tech_encryption_2 lets you build spynetworks against fallen empires (limited to most subterfuge and manipulation operations)
+- tech_encryption_3 lets you conduct most sabotage and provocation operations against fallen empires
+
+- diplomatic incident always reduces target's influence
+
+New Events
+- Subterfuge operations, false leads set back operation
+- Country Espionage, ruler has been careless, or has been selling secrets
+
+New federation types: (may not do)
+Spiritualist (Holy Communion)
+	level 1: +25% Spiritualist Ethics Attraction, +10% unity
+	level 2: President:	Can fund missionaries,			Members: +5% unity, -50% Cohesion loss from new members
+						+50% spiritualist attraction
+						on random planets for 25 years
+						Missionary events, good and bad
+	level 3: President:	+1 Available Envoy				Members: +5% unity, +50% Diplomatic Weight from Pops, but -25% from Technology
+	level 4: President:	+20% Diplo Weight from Pops		Members: +5% unity, +25% Damage to Crisis Ships
+	level 5: President: Shroud Access					Members: +5% unity, +25% Damage to Crisis Ships
+						Similar to Zroni artifact
+						Done as an edict, costs zro
+						10 year cooldown
+
+Pacifist (Defensive Coalition), focus on protecting members
+	Cannot use fleet contribution laws, arena or psionic combat, war declarations always require unanimous support
+	level 1: +66% fleet contribution (high cap), +100% claim costs
+	level 2: President: +1 Available Envoys				Members: +20% fire rate in home territory, +25% starbase upgrade speed
+	level 3: President: + 1 influence 					Members: +25% ship construction speed during defensive wars, +10% resources from jobs while at peace (or during a crisis)
+						(except during offensive war)
+	level 4: President:	+20% Diplo Weight from Economy	Members: +10% resources from jobs during a crisis, +20% defense platform damage
+	level 5: President:	-15% Empire Size				Members: +10% resources from jobs during a crisis, +20% ship speed inside federation territory

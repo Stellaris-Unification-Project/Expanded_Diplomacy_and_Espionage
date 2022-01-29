@@ -1,0 +1,119 @@
+For Stellaris 3.2
+
+This mods adds various features and events centered around diplomacy and espionage. Major features include more varied opinion modifiers, new resolutions and operations, and the ability to form the Galactic Republic.
+
+[h1]Feature List[/h1]
+
+Diplomacy
+- Gestalts can research their own diplomacy techs
+- New Envoy events
+- First contact is Slower
+- Communication spread events happen less frequently
+- AI will try to vassalize and attack weakened players more often
+
+New Opinion Modifiers
+	- More Policy related opinions
+	- Ascension Perk related opinions
+	- Nobody likes a slaving despot
+	- Imperialists dislike each other
+	- Empires won't like you enslaving or purging their citizens
+	- They won't like you nerve stapling their citizens, either
+	- Empires will like you less if you are in breach of their favorite galactic resolutions
+
+Federations:
+- Trade Leagues are generally available to Non-Xenophobe Pacifists, unless they have certain civics
+- Hegemons are always available to Feudal Societies
+- Hegemons are always available to Xenophobes (unless Egalitarian or Pacifist)
+- Hegemons give more authoritarian ethics attraction, less xenophile ethics attraction
+- Martial Alliances are always available to Barbaric Despoilers, Strength of Legion, Warbots, and Determined Exterminators
+- Research Cooperative are available to hive minds with research orriented civics
+- Fleet contributions are effectively uncapped
+- Association Status respects federation invite laws
+- Gestalts can participate in arena combat, selecting a random admiral or general to act as a proxy
+
+Galactic Community
+- New Resolutions
+	- Can form the Galactic Republic, turning the custodianship into a permanent elected office
+	- New Galactic Republic resolutions
+	- Law and Order, authoritarian resolution tree
+	- Galactic Cooperation, xenophile resolution tree
+	- Galactic Healthcare, pop growth resolution tree
+	- Can choose a host for the Galactic Senate (similar to founding the galactic market, requires the Federations or Nemesis dlc)
+		- The Galactic Empire will always host the Galactic Senate
+	- Ascension, empires can teach others to be psionic, provide gene therapy and grant an advanced trait, or offer cybernetic implants. Empires can opt-out at any time via policy.
+	- Resolution to protect neutral fleets (enclaves, ext), requires Reverence for Life
+	- Resolution to protect space crystals
+	- With Expanded Spaceborn active, you can also protect void clouds and mining drones
+- Many changes to vanilla resolutions, see pinned topic for details
+- The Imperial Armada can support more ships than the Galactic Defense Force
+- Greater variety in resolution ai weights
+	- More ethics and civics taken into account when voting
+	- AI more likely to vote for resolutions what will hurt their rivals
+	- AI less likely to vote for resolutions that will hurt their federation members (unless hegemon)
+	- AI is smarter about resolutions that target themselves
+- Cannot use most hostile resolutions against the galactic emperor unless imperial authority is under 100
+- Proposing and passing certain resolutions may upset certain factions
+- Gestalts get slightly more diplomatic weight from pops (to balance out no bonuses from pop happiness)
+- Fleet power gives slightly less diplomatic weight
+
+Espionage:
+- New Operations (Requires Nemesis unless otherwise specified)
+	- Counterintelligence, disrupts enemy spy networks
+	- Influence Campaign, encourages one of your ethics
+	- Industrial Sabotage, devastates planet, decreases industrial output
+	- War Propaganda, increase war exhaustion gain and decrease stability
+	- Xeno-Trafficking, steal pops, available to slavers and assimilators
+	- Xeno-Abolition, rescue enslaved and undesirable pops, available to egalitarians, xenophiles, democracies, and rogue servitors
+	- Foment Unrest, decreases stability on one world, with a chance for the unrest to spread to other worlds.
+	- Study Defenses, increases army and bombardment damage against target
+	- Hostile Takeover, seize control of a rival's branch office
+	- Market Expropriation, expel a branch office
+- Changed Operations
+	- Arm Privateers now spawns 3 pirate fleets
+	- Extort Favors now grants 25 influence
+	- Extort Favors allows you to expend a diplomatic asset for additional influence and favors
+	- Sabotage Starbase now destroys up to three buildings and modules of the same type
+	- Sabotage Starbase now adds a temporary debuff to shields, weapons damage, and fire rate
+	- Sabotage Starbase now has additional types collateral damage you can get
+	- Sleeper Agents, can spend a technology asset to gain -2 operation difficulty
+	- Smear campaign targets allies and vassals first
+	- Smear campaign usually has a bigger opinion effect against friends of the target
+	- Smear Campaign decreases federation cohesion by an additional 50%
+	- Spark Diplomatic Incident now has lower requirements
+	- Can sometimes get non-gestalt assets from gestalts (in particular, from Rogue Servitors, Driven Assimilators, and certain civics from Expanded Pops)
+	- Anti-Piracy Initiative makes it slightly harder to fund privateers
+	- GALPOL and ISD makes it slightly easier for the custodian/emperor to gather information and assets from members
+	- Cooperative Research Channels resolution makes it slightly easier to steal technologies from members
+- General Changes
+	- Infiltration from empire sprawl has been significantly increased
+	- Most espionage-related opinions now stack
+	
+Warfare:
+- Warscore modified to give more weight to planet occupations and superior fleets
+- War in Heaven, war exhaustion ticks up much more slowly
+- Devastation also damages defensive army morale (up to -50%)
+- Invading primitives kills off up to 6 primitive pops
+
+Tweaks:
+- Penal Colony gives +5% technician, miner, and farmer output
+- Thrall Worlds give +5% slave production
+- Embassy Buildings give +1 bureaucrat job per level
+
+
+[h1]Compatability[/h1]
+This mod is not compatible with Galactic Community Expanded, as we both modify the resolution category file.
+
+
+[h1]Recommended Mods[/h1]
+Mods that compliment this mod, or which this mod can tie into
+
+Claims Decay - Dynamic Diplomacy
+https://steamcommunity.com/sharedfiles/filedetails/?id=1355094979
+
+Agreements Boost Diplomatic Weight
+https://steamcommunity.com/sharedfiles/filedetails/?id=2512152163
+
+
+[h1]Donations[/h1]
+[url=https://www.patreon.com/user?u=32677412] [img]https://c5.patreon.com/external/logo/become_a_patron_button@2x.png[/img] [/url]
+I have recently launched a [url=https://www.patreon.com/user?u=32677412]patreon[/url] page. I have a lot of future plans for my mods, but they will rely on your support to see fruition. I'm not planning on delaying releases for non-patreons or anything like that, but my patreons will get behind the scenes looks into upcoming content. If you enjoy my mods, I hope you consider donating a little.
