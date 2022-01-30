@@ -6555,8 +6555,8 @@ espionage_operation_event = {
 						NOR = {
 							has_modifier = foment_rebellion
 							has_modifier = foment_rebellion_more
+							has_modifier = foment_rebellion_poor
 						}
-						NOT = { has_modifier = foment_rebellion_poor }
 						NOR = {
                             AND = {
                                 exists = event_target:rebel_planet_1

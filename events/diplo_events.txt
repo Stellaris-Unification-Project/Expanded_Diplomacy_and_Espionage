@@ -3378,9 +3378,9 @@ country_event = {
 		NOR = {
 			has_country_flag = recent_envoy_event
 			has_modifier = dishonorable_envoys
+			has_country_flag = dishonorable_envoys
+			has_modifier = galactic_community_diplo_corps_respected
 		}
-		NOT = { has_country_flag = dishonorable_envoys }
-		NOT = { has_modifier = galactic_community_diplo_corps_respected }
 		OR = { is_country_type = default is_country_type = ascended_empire is_country_type = lost_empire }
 		any_relation = {
 			OR = { is_country_type = default is_country_type = ascended_empire is_country_type = lost_empire }

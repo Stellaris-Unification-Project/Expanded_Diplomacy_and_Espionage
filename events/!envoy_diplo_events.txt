@@ -25,8 +25,8 @@ country_event = {
 			NOR = {
 				has_country_flag = recent_envoy_event
 				is_same_species = root
+				is_same_species = root.ruler
 			}
-			NOT = { is_same_species = root.ruler }
 			any_envoy = {
 				has_envoy_task = {
 					task = improve_relations
@@ -50,8 +50,8 @@ country_event = {
 				NOR = {
 					has_country_flag = recent_envoy_event
 					is_same_species = root
+					is_same_species = root.ruler
 				}
-				NOT = { is_same_species = root.ruler }
 				any_envoy = {
 					has_envoy_task = {
 						task = improve_relations
@@ -268,8 +268,6 @@ country_event = {
 			NOR = {
 				is_same_species = root
 				is_in_federation_with = root
-			}
-			NOR = {
 				has_defensive_pact = root
 				is_overlord_to = root
 			}
@@ -325,8 +323,6 @@ country_event = {
 				NOR = {
 					is_same_species = root
 					is_in_federation_with = root
-				}
-				NOR = {
 					has_defensive_pact = root
 					is_overlord_to = root
 				}
@@ -545,8 +541,8 @@ country_event = {
 			NOR = {
 				is_pop_faction_type = progressive
 				is_pop_faction_type = prosperity
+				is_pop_faction_type = xenoist
 			}
-			NOT = { is_pop_faction_type = xenoist }
 			is_owner_ethic_pop_faction = yes
 		}
 	}
@@ -621,8 +617,8 @@ country_event = {
 				NOR = {
 					is_pop_faction_type = progressive
 					is_pop_faction_type = prosperity
+					is_pop_faction_type = xenoist
 				}
-				NOT = { is_pop_faction_type = xenoist }
 				is_owner_ethic_pop_faction = yes
 			}
 			add_modifier = {

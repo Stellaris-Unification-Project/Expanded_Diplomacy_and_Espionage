@@ -1119,12 +1119,10 @@ country_event = {
 			NOR = {
 				has_origin = origin_common_ground
 				has_origin = origin_common_ground_npc
-			}
-			NOR = {
 				has_origin = origin_symbiote
 				has_valid_civic = civic_hive_empath
+				has_valid_civic = civic_harm_hive
 			}
-			NOT = { has_valid_civic = civic_harm_hive }
 		}
 
 		custom_tooltip = "FED_WE_WILL_BE_IN_BREACH"
@@ -1200,12 +1198,10 @@ country_event = {
 			NOR = {
 				has_origin = origin_common_ground
 				has_origin = origin_common_ground_npc
-			}
-			NOR = {
 				has_origin = origin_symbiote
 				has_valid_civic = civic_hive_empath
+				has_valid_civic = civic_harm_hive
 			}
-			NOT = { has_valid_civic = civic_harm_hive }
 		}
 
 		custom_tooltip = "FED_WE_WILL_BE_IN_BREACH"
