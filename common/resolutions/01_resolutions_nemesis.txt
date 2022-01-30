@@ -1131,10 +1131,8 @@ resolution_galacticreforms_nominate_custodian = {
 			factor = 0
 			is_subject = yes
 			overlord = { 
-				OR = {
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
-				}
+				
+					is_fallen_empire = yes
 			}
 		}
 		modifier = {
@@ -1254,10 +1252,8 @@ resolution_galacticreforms_unseat_custodian = {
 			factor = 20
 			is_subject = yes
 			overlord = { 
-				OR = {
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
-				}
+				
+					is_fallen_empire = yes
 			}
 		}
 		modifier = {
@@ -1474,10 +1470,8 @@ resolution_custodian_form_empire = {
 			factor = 0
 			is_subject = yes
 			overlord = { 
-				OR = {
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
-				}
+				
+					is_fallen_empire = yes
 			}
 		}
 		modifier = {
@@ -1650,10 +1644,8 @@ resolution_custodian_united_front = {
 			factor = 0
 			is_subject = yes
 			overlord = { 
-				OR = {
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
-				}
+				
+					is_fallen_empire = yes
 			}
 		}
 		modifier = {
@@ -1815,10 +1807,8 @@ resolution_custodian_galactic_mobilization = {
 			factor = 0
 			is_subject = yes
 			overlord = { 
-				OR = {
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
-				}
+				
+					is_fallen_empire = yes
 			}
 		}
 		modifier = {
@@ -2139,10 +2129,8 @@ resolution_custodian_extend_custodianship = {
 			factor = 0
 			is_subject = yes
 			overlord = { 
-				OR = {
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
-				}
+				
+					is_fallen_empire = yes
 			}
 		}
 		modifier = {
@@ -2304,10 +2292,8 @@ resolution_custodian_perpetual_custodianship = {
 			factor = 0
 			is_subject = yes
 			overlord = { 
-				OR = {
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
-				}
+				
+					is_fallen_empire = yes
 			}
 		}
 		modifier = {
@@ -2578,10 +2564,8 @@ resolution_custodian_gdf = {
 			factor = 0
 			is_subject = yes
 			overlord = { 
-				OR = {
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
-				}
+				
+					is_fallen_empire = yes
 			}
 		}
 		modifier = {
@@ -2728,10 +2712,8 @@ resolution_custodian_expand_gdf = {
 			factor = 0
 			is_subject = yes
 			overlord = { 
-				OR = {
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
-				}
+				
+					is_fallen_empire = yes
 			}
 		}
 		modifier = {
@@ -2876,10 +2858,8 @@ resolution_custodian_disband_gdf = {
 			factor = 20
 			is_subject = yes
 			overlord = { 
-				OR = {
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
-				}
+				
+					is_fallen_empire = yes
 			}
 		}
 		modifier = {
@@ -3670,10 +3650,8 @@ resolution_emperor_united_front = {
 			factor = 0
 			is_subject = yes
 			overlord = { 
-				OR = {
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
-				}
+				
+					is_fallen_empire = yes
 			}
 		}
 		modifier = {
@@ -3827,10 +3805,8 @@ resolution_emperor_imperial_armada = {
 			factor = 0
 			is_subject = yes
 			overlord = { 
-				OR = {
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
-				}
+				
+					is_fallen_empire = yes
 			}
 		}
 		modifier = {

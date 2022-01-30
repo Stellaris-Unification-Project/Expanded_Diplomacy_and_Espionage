@@ -485,7 +485,7 @@ country_event = {
                         if = {
                             limit = {
                                 any_spynetwork = {
-                                    owner = { is_same_value = prev }
+                                    is_owned_by = prev
                                     target = { is_same_value = root }
                                 }
                             }
@@ -2124,8 +2124,8 @@ espionage_operation_event = {
 				target = {
 					NOT = {
 						any_spynetwork = {
-							owner = { is_same_value = root.target }
-							target = { is_same_value = root.owner }
+							is_owned_by = root.target
+							target = { is_same_empire = root.owner }
 						}
 					}
 				}
@@ -2202,8 +2202,8 @@ espionage_operation_event = {
 			save_event_target_as = target_country
 			random_spynetwork = {
 				limit = {
-					owner = { is_same_value = root.target }
-					target = { is_same_value = root.owner }
+					is_owned_by = root.target
+					target = { is_same_empire = root.owner }
 				}
 				save_event_target_as = target_spynetwork
 			}
@@ -2283,7 +2283,7 @@ country_event = {
 				modifier = {
 					factor = 1.5
 					any_espionage_operation = {
-						owner = { is_same_value = event_target:target_country }
+						is_owned_by = event_target:target_country
 						target = { is_same_value = ROOT }
 						OR = {
 							has_espionage_category = op_cat_sabotage
@@ -2442,12 +2442,12 @@ country_event = {
 			}
 			OR = {
 				any_espionage_operation = {
-					owner = { is_same_value = event_target:target_country }
+					is_owned_by = event_target:target_country
 					target = { is_same_value = ROOT }
 				}
 				event_target:target_country = {
 					any_spynetwork = {
-						owner = { is_same_value = event_target:target_country }
+						is_owned_by = event_target:target_country
 						target = { is_same_value = root }
 						has_modifier = sleeper_cell_operation_success
 					}
@@ -2462,14 +2462,14 @@ country_event = {
 			if = {
 				limit = {
 					any_espionage_operation = {
-						owner = { is_same_value = event_target:target_country }
+						is_owned_by = event_target:target_country
 						target = { is_same_value = ROOT }
 					}
 				}
 				custom_tooltip = diplospy.105.tooltip.operation
 				random_espionage_operation = {
 					limit = {
-						owner = { is_same_value = event_target:target_country }
+						is_owned_by = event_target:target_country
 						target = { is_same_value = ROOT }
 					}
 					save_event_target_as = target_operation
@@ -2484,7 +2484,7 @@ country_event = {
 				event_target:target_country = {
 					random_spynetwork = {
 						limit = {
-							owner = { is_same_value = event_target:target_country }
+							is_owned_by = event_target:target_country
 							target = { is_same_value = root }
 							has_modifier = sleeper_cell_operation_success
 						}
@@ -2505,7 +2505,7 @@ country_event = {
 			if = {
 				limit = {
 					any_spynetwork = {
-						owner = { is_same_value = root }
+						is_owned_by = root
 						target = { is_same_value = event_target:target_country }
 						is_spynetwork_level > 5
 					}
@@ -2668,7 +2668,7 @@ country_event = {
 			tooltip = {
 				random_spynetwork = {
 					limit = {
-						owner = { is_same_value = root }
+						is_owned_by = root
 						target = { is_same_value = from }
 					}
 					remove_modifier = sleeper_cell_operation_success
@@ -3150,7 +3150,7 @@ country_event = {
                     OR = {
                         NOT = {
                             any_spynetwork = {
-                                owner = { is_same_value = root }
+                                is_owned_by = root
                                 target = { is_same_value = from }
                             }
                         }
@@ -3173,7 +3173,7 @@ country_event = {
                 if = {
                     limit = {
                         any_spynetwork = {
-                            owner = { is_same_value = root }
+                            is_owned_by = root
                             target = { is_same_value = from }
                             is_spynetwork_level > 5
                         }
@@ -3448,8 +3448,10 @@ espionage_operation_event = {
 				is_machine_empire = yes
 				is_homicidal = no
 				is_open_gestalt = no
-				NOT = { has_valid_civic = civic_machine_servitor }
-				NOT = { has_valid_civic = civic_machine_assimilator }
+				NOR = {
+					has_valid_civic = civic_machine_servitor
+					has_valid_civic = civic_machine_assimilator
+				}
 			}
 		}
 	}
@@ -3814,7 +3816,7 @@ country_event = {
 							any_playable_country = {
 								empire_can_abduct_pops = yes
 								NOR = {
-									is_same_value = fromfrom.owner
+									is_same_empire = fromfrom.owner
 									is_same_value = fromfrom.target
 								}
 							}
@@ -4003,7 +4005,7 @@ country_event = {
 				limit = {
 					empire_can_abduct_pops = yes
 					NOR = {
-						is_same_value = fromfrom.owner
+						is_same_empire = fromfrom.owner
 						is_same_value = fromfrom.target
 					}
 				}
@@ -4174,8 +4176,10 @@ country_event = {
 		trigger = {
 			exists = event_target:blamed_empire
 			is_gestalt = yes
-			NOT = { has_valid_civic = civic_machine_servitor }
-			NOT = { has_valid_civic = civic_machine_assimilator }
+			NOR = {
+				has_valid_civic = civic_machine_servitor
+				has_valid_civic = civic_machine_assimilator
+			}
 		}
 		text = diplospy.126.desc.messy.ges.1
 	}
@@ -4211,7 +4215,7 @@ country_event = {
                     OR = {
                         NOT = {
                             any_spynetwork = {
-                                owner = { is_same_value = root }
+                                is_owned_by = root
                                 target = { is_same_value = from }
                             }
                         }
@@ -4234,7 +4238,7 @@ country_event = {
                 if = {
                     limit = {
                         any_spynetwork = {
-                            owner = { is_same_value = root }
+                            is_owned_by = root
                             target = { is_same_value = from }
                             is_spynetwork_level > 5
                         }
@@ -4672,7 +4676,7 @@ country_event = {
 							any_playable_country = {
 								empire_can_rescue_pops = yes
 								NOR = {
-									is_same_value = fromfrom.owner
+									is_same_empire = fromfrom.owner
 									is_same_value = fromfrom.target
 								}
 							}
@@ -4856,7 +4860,7 @@ country_event = {
 				limit = {
 					empire_can_rescue_pops = yes
 					NOR = {
-						is_same_value = fromfrom.owner
+						is_same_empire = fromfrom.owner
 						is_same_value = fromfrom.target
 					}
 				}
@@ -5072,7 +5076,7 @@ country_event = {
                     OR = {
                         NOT = {
                             any_spynetwork = {
-                                owner = { is_same_value = root }
+                                is_owned_by = root
                                 target = { is_same_value = from }
                             }
                         }
@@ -5095,7 +5099,7 @@ country_event = {
                 if = {
                     limit = {
                         any_spynetwork = {
-                            owner = { is_same_value = root }
+                            is_owned_by = root
                             target = { is_same_value = from }
                             is_spynetwork_level > 5
                         }
@@ -5210,8 +5214,10 @@ espionage_operation_event = {
 				count = 3
 				random_owned_planet = {
 					limit = {
-						NOT = { has_modifier = industrial_sabotage }
-						NOT = { planet_devastation > 75 }
+						NOR = {
+							has_modifier = industrial_sabotage
+							planet_devastation > 75
+						}
 						NOR = {
                             AND = {
                                 exists = event_target:sabotage_planet_1
@@ -5567,7 +5573,7 @@ country_event = {
                     }
 					modifier = {
                         factor = 0
-                        from = { NOT = { has_espionage_asset_economy = yes } }
+                        from = { has_espionage_asset_economy = no }
                     }
                     set_country_flag = sabotage_industry_profit@from.target
                 }
@@ -5776,7 +5782,7 @@ country_event = {
                     OR = {
                         NOT = {
                             any_spynetwork = {
-                                owner = { is_same_value = root }
+                                is_owned_by = root
                                 target = { is_same_value = from }
                             }
                         }
@@ -5799,7 +5805,7 @@ country_event = {
                 if = {
                     limit = {
                         any_spynetwork = {
-                            owner = { is_same_value = root }
+                            is_owned_by = root
                             target = { is_same_value = from }
                             is_spynetwork_level > 5
                         }
@@ -5835,12 +5841,10 @@ country_event = {
         name = {
             text = CURSES
             trigger = {
-                NOT = {
-                    OR = {
+                NOR = {
                         is_xenophobe = yes
                         is_gestalt = yes
-                    }
-                }
+}
             }
         }
     }
@@ -6443,7 +6447,7 @@ country_event = {
                     OR = {
                         NOT = {
                             any_spynetwork = {
-                                owner = { is_same_value = root }
+                                is_owned_by = root
                                 target = { is_same_value = from }
                             }
                         }
@@ -6466,7 +6470,7 @@ country_event = {
                 if = {
                     limit = {
                         any_spynetwork = {
-                            owner = { is_same_value = root }
+                            is_owned_by = root
                             target = { is_same_value = from }
                             is_spynetwork_level > 5
                         }
@@ -6500,12 +6504,10 @@ country_event = {
         name = {
             text = CURSES
             trigger = {
-                NOT = {
-                    OR = {
+                NOR = {
                         is_xenophobe = yes
                         is_gestalt = yes
-                    }
-                }
+}
             }
         }
     }
@@ -6550,8 +6552,10 @@ espionage_operation_event = {
 			target = {
 				random_owned_planet = {
 					limit = {
-						NOT = { has_modifier = foment_rebellion }
-						NOT = { has_modifier = foment_rebellion_more }
+						NOR = {
+							has_modifier = foment_rebellion
+							has_modifier = foment_rebellion_more
+						}
 						NOT = { has_modifier = foment_rebellion_poor }
 						NOR = {
                             AND = {
@@ -7254,8 +7258,8 @@ country_event = {
 							has_modifier = foment_rebellion
 							has_modifier = foment_rebellion_more
 							has_modifier = foment_rebellion_poor
+							is_same_value = event_target:rebel_planet_target
 						}
-						NOT = { is_same_value = event_target:rebel_planet_target }
 					}
 				}
 				fail_text = diplospy.164.c.fail_text
@@ -7701,7 +7705,7 @@ espionage_operation_event = {
 				if = {
 					limit = {
 						any_spynetwork = {
-							owner = { is_same_value = root.owner }
+							is_owned_by = root.owner
 							target = { is_same_value = root.target }
 							is_spynetwork_level > 5
 						}
@@ -8554,7 +8558,7 @@ country_event = {
                     OR = {
                         NOT = {
                             any_spynetwork = {
-                                owner = { is_same_value = root }
+                                is_owned_by = root
                                 target = { is_same_value = from }
                             }
                         }
@@ -8577,7 +8581,7 @@ country_event = {
                 if = {
                     limit = {
                         any_spynetwork = {
-                            owner = { is_same_value = root }
+                            is_owned_by = root
                             target = { is_same_value = from }
                             is_spynetwork_level > 5
                         }
@@ -9177,7 +9181,7 @@ country_event = {
                     OR = {
                         NOT = {
                             any_spynetwork = {
-                                owner = { is_same_value = root }
+                                is_owned_by = root
                                 target = { is_same_value = from }
                             }
                         }
@@ -9200,7 +9204,7 @@ country_event = {
                 if = {
                     limit = {
                         any_spynetwork = {
-                            owner = { is_same_value = root }
+                            is_owned_by = root
                             target = { is_same_value = from }
                             is_spynetwork_level > 5
                         }

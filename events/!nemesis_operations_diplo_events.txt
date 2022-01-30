@@ -564,7 +564,7 @@ country_event = {
                     OR = {
                         NOT = {
                             any_spynetwork = {
-                                owner = { is_same_value = root }
+                                is_owned_by = root
                                 target = { is_same_value = from }
                             }
                         }
@@ -587,7 +587,7 @@ country_event = {
                 if = {
                     limit = {
                         any_spynetwork = {
-                            owner = { is_same_value = root }
+                            is_owned_by = root
                             target = { is_same_value = from }
                             is_spynetwork_level > 5
                         }
@@ -617,12 +617,10 @@ country_event = {
         name = {
             text = CURSES
             trigger = {
-                NOT = {
-                    OR = {
+                NOR = {
                         is_xenophobe = yes
                         is_gestalt = yes
-                    }
-                }
+}
             }
         }
     }
@@ -678,7 +676,7 @@ espionage_operation_event = {
                 limit = {
                     any_playable_country = {
                         NOR = {
-                            is_same_value = root.owner
+                            is_same_empire = root.owner
                             is_same_value = root.target
                         }
                         has_communications = root.owner
@@ -723,7 +721,7 @@ espionage_operation_event = {
                 random_playable_country = {
                     limit = {
                         NOR = {
-                            is_same_value = root.owner
+                            is_same_empire = root.owner
                             is_same_value = root.target
                         }
                         has_communications = root.owner
@@ -794,7 +792,7 @@ espionage_operation_event = {
                 limit = {
                     any_playable_country = {
                         NOR = {
-                            is_same_value = root.owner
+                            is_same_empire = root.owner
                             is_same_value = root.target
                         }
                         has_communications = root.owner
@@ -835,7 +833,7 @@ espionage_operation_event = {
                 random_playable_country = {
                     limit = {
                         NOR = {
-                            is_same_value = root.owner
+                            is_same_empire = root.owner
                             is_same_value = root.target
                         }
                         has_communications = root.owner
@@ -902,7 +900,7 @@ espionage_operation_event = {
                 limit = {
                     any_playable_country = {
                         NOR = {
-                            is_same_value = root.owner
+                            is_same_empire = root.owner
                             is_same_value = root.target
                         }
                         has_communications = root.owner
@@ -943,7 +941,7 @@ espionage_operation_event = {
                 random_playable_country = {
                     limit = {
                         NOR = {
-                            is_same_value = root.owner
+                            is_same_empire = root.owner
                             is_same_value = root.target
                         }
                         has_communications = root.owner
@@ -1188,7 +1186,7 @@ country_event = {
 			if = {
 				limit = {
 					any_spynetwork = {
-						owner = { is_same_value = root }
+						is_owned_by = root
 						target = { is_same_value = from }
 					}
 				}
@@ -1304,7 +1302,7 @@ country_event = {
 			if = {
 				limit = {
 					any_spynetwork = {
-						owner = { is_same_value = root }
+						is_owned_by = root
 						target = { is_same_value = from }
 					}
 				}
@@ -1420,7 +1418,7 @@ country_event = {
 			if = {
 				limit = {
 					any_spynetwork = {
-						owner = { is_same_value = root }
+						is_owned_by = root
 						target = { is_same_value = from }
 					}
 				}
@@ -1589,7 +1587,7 @@ country_event = {
                         }
                         no_scope = {
                             any_spynetwork = {
-                                owner = { is_same_value = from.target }
+                                is_owned_by = from.target
                                 target = { is_same_value = root }
                             }
                         }
@@ -1603,7 +1601,7 @@ country_event = {
                     limit = {
                         no_scope = {
                             any_spynetwork = {
-                                owner = { is_same_value = from.target }
+                                is_owned_by = from.target
                                 target = { is_same_value = root }
                             }
                         }
@@ -1648,7 +1646,7 @@ country_event = {
                                 }
                                 no_scope = { #makes any_spynetwork check any in the game
                                     any_spynetwork = {
-                                        owner = { is_same_value = from.target }
+                                        is_owned_by = from.target
                                         target = { is_same_value = root }
                                     }
                                 }
@@ -1662,7 +1660,7 @@ country_event = {
                             limit = {
                                 no_scope = { #makes any_spynetwork check any in the game
                                     any_spynetwork = {
-                                        owner = { is_same_value = from.target }
+                                        is_owned_by = from.target
                                         target = { is_same_value = root }
                                     }
                                 }

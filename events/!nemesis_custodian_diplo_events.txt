@@ -169,8 +169,8 @@ country_event = {
 						is_galactic_community_member = yes
 						is_galactic_custodian = no
 						is_subject = no
-						NOT = { has_country_flag = republic_not_electable }
 						NOR = {
+							has_country_flag = republic_not_electable
 							galactic_community_rank <= 3
 							is_part_of_galactic_council = yes
 							is_permanent_councillor = yes
@@ -182,8 +182,8 @@ country_event = {
 						is_galactic_community_member = yes
 						is_galactic_custodian = no
 						is_subject = no
-						NOT = { has_country_flag = republic_not_electable }
 						NOR = {
+							has_country_flag = republic_not_electable
 							galactic_community_rank <= 3
 							is_part_of_galactic_council = yes
 							is_permanent_councillor = yes

@@ -857,7 +857,7 @@ country_event = {
 		}
 		remove_global_flag = ongoing_headquarter_nomination
 		# nominees start equal, modifiers improve chances
-		random_country = {
+		random_playable_country = {
 			limit = {
 				is_country_type = default
 				has_country_flag = headquarter_nomination_eligible
@@ -1449,7 +1449,7 @@ country_event = {
 		}
 		remove_global_flag = ongoing_headquarter_nomination
 		# nominees start equal, modifiers improve chances
-		random_country = {
+		random_playable_country = {
 			limit = {
 				is_country_type = default
 				has_country_flag = headquarter_nomination_eligible
@@ -1828,8 +1828,7 @@ planet_event = {
 				is_country_type = extradimensional_2
 				is_country_type = extradimensional_3
 				is_country_type = ai_empire
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
+				is_fallen_empire = yes
 				is_country_type = ascended_empire
 				is_country_type = lost_empire
 			}

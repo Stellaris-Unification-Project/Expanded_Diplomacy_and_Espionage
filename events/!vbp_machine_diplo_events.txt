@@ -52,7 +52,7 @@ country_event = {
 			solar_system = {
 				if = {
 					limit = {
-						starbase = { owner = { is_same_value = root } }
+						starbase = { is_owned_by = root }
 					}
 					starbase = {
 						set_owner = event_target:robot_country
@@ -61,7 +61,7 @@ country_event = {
 				every_system_planet = {
 					limit = {
 						exists = owner
-						owner = { is_same_value = root }
+						is_owned_by = root
 					}
 					set_owner = event_target:robot_country			
 				}
@@ -163,7 +163,7 @@ country_event = {
 			solar_system = {
 				if = {
 					limit = {
-						starbase = { owner = { is_same_value = root } }
+						starbase = { is_owned_by = root }
 					}
 					starbase = {
 						set_owner = event_target:robot_country
@@ -172,7 +172,7 @@ country_event = {
 				every_system_planet = {
 					limit = {
 						exists = owner
-						owner = { is_same_value = root }
+						is_owned_by = root
 					}
 					set_owner = event_target:robot_country			
 				}
@@ -447,14 +447,7 @@ country_event = {
 						}
 						traits = this
 						
-						pops_can_be_colonizers = yes
-						pops_can_migrate = yes
-						pops_can_reproduce = no
-						pops_can_join_factions = yes
 						pop_maintenance = 1
-						can_generate_leaders = yes
-						pops_can_be_slaves = yes
-						pops_have_happiness = yes
 					}
 					modify_species = {
 						species = last_created_species
@@ -606,7 +599,7 @@ country_event = {
 				solar_system = {
 					if = {
 						limit = {
-							starbase = { owner = { is_same_value = root } }
+							starbase = { is_owned_by = root }
 						}
 						starbase = {
 							set_owner = event_target:robot_country
@@ -615,7 +608,7 @@ country_event = {
 					every_system_planet = {
 						limit = {
 							exists = owner
-							owner = { is_same_value = root }
+							is_owned_by = root
 						}
 						set_owner = event_target:robot_country			
 					}

@@ -68,10 +68,7 @@ country_event = {
 		}
 
 		allow = {
-			NOR = {
-				has_ethic = "ethic_egalitarian"
-				has_ethic = "ethic_fanatic_egalitarian"
-			}
+			is_egalitarian = no
 		}
 
 		set_policy = {
@@ -147,10 +144,8 @@ country_event = {
 
 		trigger = {
 			NOR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_egalitarian"
-				has_ethic = "ethic_fanatic_egalitarian"
+				is_xenophobe = yes
+				is_egalitarian = yes
 			}
 		}
 
@@ -217,10 +212,8 @@ country_event = {
 
 		trigger = {
 			OR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_egalitarian"
-				has_ethic = "ethic_fanatic_egalitarian"
+				is_xenophobe = yes
+				is_egalitarian = yes
 			}
 		}
 
@@ -312,10 +305,8 @@ country_event = {
 
 		trigger = {
 			NOR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_militarist"
-				has_ethic = "ethic_fanatic_militarist"
+				is_xenophobe = yes
+				is_militarist = yes
 			}
 			OR = {
 				is_ai = no
@@ -348,10 +339,8 @@ country_event = {
 
 		trigger = {
 			OR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_militarist"
-				has_ethic = "ethic_fanatic_militarist"
+				is_xenophobe = yes
+				is_militarist = yes
 			}
 			OR = {
 				is_ai = no
@@ -431,10 +420,8 @@ country_event = {
 
 		trigger = {
 			NOR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_militarist"
-				has_ethic = "ethic_fanatic_militarist"
+				is_xenophobe = yes
+				is_militarist = yes
 			}
 			OR = {
 				is_ai = no
@@ -479,10 +466,8 @@ country_event = {
 
 		trigger = {
 			OR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_militarist"
-				has_ethic = "ethic_fanatic_militarist"
+				is_xenophobe = yes
+				is_militarist = yes
 			}
 			OR = {
 				is_ai = no
@@ -556,10 +541,8 @@ country_event = {
 
 		trigger = {
 			NOR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_militarist"
-				has_ethic = "ethic_fanatic_militarist"
+				is_xenophobe = yes
+				is_militarist = yes
 			}
 		}
 
@@ -588,10 +571,8 @@ country_event = {
 
 		trigger = {
 			OR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_militarist"
-				has_ethic = "ethic_fanatic_militarist"
+				is_xenophobe = yes
+				is_militarist = yes
 			}
 		}
 
@@ -635,7 +616,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		random_country = {
+		random_playable_country = {
 			limit = {
 				is_country_type = default
 				is_synthetic_empire = no
@@ -672,8 +653,7 @@ country_event = {
 		
 		allow = {
 			OR = {
-				has_ethic = "ethic_egalitarian"
-				has_ethic = "ethic_fanatic_egalitarian"
+				is_egalitarian = yes
 			}
 		}
 
@@ -734,10 +714,8 @@ country_event = {
 		trigger = {
 			OR = {
 			    has_country_flag = synthetic_empire
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_materialist"
-				has_ethic = "ethic_fanatic_materialist"
+				is_xenophobe = yes
+				is_materialist = yes
 			}
 		}
 
@@ -826,7 +804,7 @@ country_event = {
 			limit = {
 				is_active_resolution = "resolution_divinity_a_defined_purpose"
 			}
-			random_country = {
+			random_playable_country = {
 				limit = {
 					is_country_type = default
 					is_synthetic_empire = no
@@ -941,11 +919,9 @@ country_event = {
 			custom_tooltip = {
 				fail_text = federations.10400.comply_fail_ascension
 
-				NOT = {
-					AND = {
-						is_synthetic_empire = yes
-						is_active_resolution = "resolution_divinity_a_defined_purpose"
-					}
+				NAND = {
+					is_synthetic_empire = yes
+					is_active_resolution = "resolution_divinity_a_defined_purpose"
 				}
 			}
 		}
@@ -1117,8 +1093,7 @@ country_event = {
 		trigger = {
 			OR = {
 				has_authority = auth_imperial
-				has_ethic = ethic_xenophobe
-				has_ethic = ethic_fanatic_xenophobe
+				is_xenophobe = yes
 				AND = {
 					is_hive_empire = yes
 					NOR = {
@@ -1141,10 +1116,14 @@ country_event = {
 		}
 
 		allow = {
-			NOT = { has_origin = origin_common_ground }
-			NOT = { has_origin = origin_common_ground_npc }
-			NOT = { has_origin = origin_symbiote }
-			NOT = { has_valid_civic = civic_hive_empath }
+			NOR = {
+				has_origin = origin_common_ground
+				has_origin = origin_common_ground_npc
+			}
+			NOR = {
+				has_origin = origin_symbiote
+				has_valid_civic = civic_hive_empath
+			}
 			NOT = { has_valid_civic = civic_harm_hive }
 		}
 
@@ -1218,10 +1197,14 @@ country_event = {
 		}
 
 		allow = {
-			NOT = { has_origin = origin_common_ground }
-			NOT = { has_origin = origin_common_ground_npc }
-			NOT = { has_origin = origin_symbiote }
-			NOT = { has_valid_civic = civic_hive_empath }
+			NOR = {
+				has_origin = origin_common_ground
+				has_origin = origin_common_ground_npc
+			}
+			NOR = {
+				has_origin = origin_symbiote
+				has_valid_civic = civic_hive_empath
+			}
 			NOT = { has_valid_civic = civic_harm_hive }
 		}
 

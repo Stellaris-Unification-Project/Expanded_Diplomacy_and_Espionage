@@ -36,10 +36,8 @@ country_event = {
 
 		trigger = {
 			NOR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
+				is_xenophobe = yes
+				is_spiritualist = yes
 			}
 		}
 
@@ -84,10 +82,8 @@ country_event = {
 
 		trigger = {
 			OR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
+				is_xenophobe = yes
+				is_spiritualist = yes
 			}
 		}
 
@@ -156,10 +152,8 @@ country_event = {
 
 		trigger = {
 			NOR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
+				is_xenophobe = yes
+				is_spiritualist = yes
 			}
 		}
 
@@ -201,10 +195,8 @@ country_event = {
 
 		trigger = {
 			OR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
+				is_xenophobe = yes
+				is_spiritualist = yes
 			}
 		}
 
@@ -270,10 +262,8 @@ country_event = {
 
 		trigger = {
 			NOR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
+				is_xenophobe = yes
+				is_spiritualist = yes
 			}
 		}
 
@@ -316,10 +306,8 @@ country_event = {
 
 		trigger = {
 			OR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
+				is_xenophobe = yes
+				is_spiritualist = yes
 			}
 		}
 
@@ -386,10 +374,8 @@ country_event = {
 
 		trigger = {
 			NOR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_authoritarian"
-				has_ethic = "ethic_fanatic_authoritarian"
+				is_xenophobe = yes
+				is_authoritarian = yes
 			}
 		}
 
@@ -424,10 +410,8 @@ country_event = {
 
 		trigger = {
 			OR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_authoritarian"
-				has_ethic = "ethic_fanatic_authoritarian"
+				is_xenophobe = yes
+				is_authoritarian = yes
 			}
 		}
 
@@ -486,10 +470,8 @@ country_event = {
 
 		trigger = {
 			NOR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_egalitarian"
-				has_ethic = "ethic_fanatic_egalitarian"
+				is_xenophobe = yes
+				is_egalitarian = yes
 			}
 		}
 
@@ -539,10 +521,8 @@ country_event = {
 
 		trigger = {
 			OR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_egalitarian"
-				has_ethic = "ethic_fanatic_egalitarian"
+				is_xenophobe = yes
+				is_egalitarian = yes
 			}
 		}
 
@@ -610,12 +590,9 @@ country_event = {
 
 		trigger = {
 			NOR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_egalitarian"
-				has_ethic = "ethic_fanatic_egalitarian"
-				has_ethic = "ethic_xenophile"
-				has_ethic = "ethic_fanatic_xenophile"
+				is_xenophobe = yes
+				is_egalitarian = yes
+				is_xenophile = yes
 			}
 		}
 
@@ -660,12 +637,9 @@ country_event = {
 
 		trigger = {
 			OR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_egalitarian"
-				has_ethic = "ethic_fanatic_egalitarian"
-				has_ethic = "ethic_xenophile"
-				has_ethic = "ethic_fanatic_xenophile"
+				is_xenophobe = yes
+				is_egalitarian = yes
+				is_xenophile = yes
 			}
 		}
 
@@ -771,10 +745,8 @@ country_event = {
 
 		trigger = {
 			NOR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_egalitarian"
-				has_ethic = "ethic_fanatic_egalitarian"
+				is_xenophobe = yes
+				is_egalitarian = yes
 			}
 		}
 
@@ -819,10 +791,8 @@ country_event = {
 
 		trigger = {
 			OR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_egalitarian"
-				has_ethic = "ethic_fanatic_egalitarian"
+				is_xenophobe = yes
+				is_egalitarian = yes
 			}
 		}
 
@@ -892,10 +862,8 @@ country_event = {
 
 		trigger = {
 			NOR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_authoritarian"
-				has_ethic = "ethic_fanatic_authoritarian"
+				is_xenophobe = yes
+				is_authoritarian = yes
 			}
 		}
 
@@ -929,10 +897,8 @@ country_event = {
 
 		trigger = {
 			OR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-				has_ethic = "ethic_authoritarian"
-				has_ethic = "ethic_fanatic_authoritarian"
+				is_xenophobe = yes
+				is_authoritarian = yes
 			}
 		}
 
@@ -1061,11 +1027,10 @@ country_event = {
 
 		trigger = {
 			NOR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
+				is_xenophobe = yes
 				AND = {
 					has_authority = auth_hive_mind
-					NOT = { is_open_gestalt = yes }
+					is_open_gestalt = no
 				}
 				has_origin = origin_natural_hunters
 			}
@@ -1104,11 +1069,10 @@ country_event = {
 
 		trigger = {
 			OR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
+				is_xenophobe = yes
 				AND = {
 					has_authority = auth_hive_mind
-					NOT = { is_open_gestalt = yes }
+					is_open_gestalt = no
 				}
 				has_origin = origin_natural_hunters
 			}
@@ -2657,8 +2621,10 @@ country_event = {
 	show_sound = event_default
 	
 	trigger = {
-		NOT = { has_country_flag = recent_envoy_event }
-		NOT = { has_country_flag = recent_enclave_proposal }
+		NOR = {
+			has_country_flag = recent_envoy_event
+			has_country_flag = recent_enclave_proposal
+		}
 		is_at_war = no
 		resource_stockpile_compare = { resource = energy value >= 10000 }
 		OR = { is_country_type = default is_country_type = ascended_empire is_country_type = lost_empire }
@@ -3161,8 +3127,10 @@ country_event = {
 	show_sound = event_alien_signal
 	
 	trigger = {
-		NOT = { has_country_flag = recent_envoy_event }
-		NOT = { has_modifier = dishonorable_envoys }
+		NOR = {
+			has_country_flag = recent_envoy_event
+			has_modifier = dishonorable_envoys
+		}
 		OR = { is_country_type = default is_country_type = ascended_empire is_country_type = lost_empire }
 		any_envoy = {
 			NOT = { has_envoy_task = { task = none } }
@@ -3297,13 +3265,13 @@ country_event = {
 		if = {
 			limit = {
 				any_spynetwork = {
-					owner = { is_same_value = root }
+					is_owned_by = root
 					target = { is_same_value = event_target:other_species_nation }
 				}
 			}
 			random_spynetwork = {
 				limit = {
-					owner = { is_same_value = root }
+					is_owned_by = root
 					target = { is_same_value = event_target:other_species_nation }
 				}
 				create_espionage_asset = { type = asset_research_database }
@@ -3407,8 +3375,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		NOT = { has_country_flag = recent_envoy_event }
-		NOT = { has_modifier = dishonorable_envoys }
+		NOR = {
+			has_country_flag = recent_envoy_event
+			has_modifier = dishonorable_envoys
+		}
 		NOT = { has_country_flag = dishonorable_envoys }
 		NOT = { has_modifier = galactic_community_diplo_corps_respected }
 		OR = { is_country_type = default is_country_type = ascended_empire is_country_type = lost_empire }
@@ -3681,7 +3651,7 @@ country_event = {
 		}
 		random_spynetwork = {
 			limit = {
-				owner = { is_same_value = root }
+				is_owned_by = root
 				target = { is_same_value = event_target:other_species_nation }
 			}
 			create_espionage_asset = { type = asset_bureaucrat }
@@ -3696,7 +3666,7 @@ country_event = {
 			}
 			random_spynetwork = {
 				limit = {
-					owner = { is_same_value = root }
+					is_owned_by = root
 					target = { is_same_value = event_target:other_species_nation }
 				}
 				create_espionage_asset = { type = asset_bureaucrat }
@@ -3732,8 +3702,10 @@ country_event = {
 	show_sound = event_default
 	
 	trigger = {
-		NOT = { has_country_flag = recent_envoy_event }
-		NOT = { has_country_flag = recent_federation_gala }
+		NOR = {
+			has_country_flag = recent_envoy_event
+			has_country_flag = recent_federation_gala
+		}
 		OR = { is_country_type = default is_country_type = ascended_empire is_country_type = lost_empire }
 		has_federation = yes
 		is_at_war = no
@@ -7169,8 +7141,10 @@ country_event = {
 	}
 	desc = {
 		trigger = {
-			NOT = { is_same_value = from }
-			NOT = { has_country_flag = republic_too_small }
+			NOR = {
+				is_same_value = from
+				has_country_flag = republic_too_small
+			}
 		}
 		text = "diploevent.308.b.desc"
 	}

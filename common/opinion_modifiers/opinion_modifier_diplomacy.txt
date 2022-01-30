@@ -408,8 +408,7 @@ opinion_imperialist_rival = {
 opinion_fallen_empire_rival = {
 	trigger = {
 		OR = {
-			is_country_type = fallen_empire
-			is_country_type = awakened_fallen_empire
+			is_fallen_empire = yes
 			is_country_type = ascended_empire
 			is_country_type = lost_empire
 		}
@@ -449,8 +448,7 @@ opinion_fallen_empire_rival = {
 		}
 		FROM = {
 			OR = {
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
+				is_fallen_empire = yes
 				is_country_type = ascended_empire
 				is_country_type = lost_empire
 			}
@@ -594,10 +592,7 @@ opinion_policy_leader_enhancement = {
 opinion_policy_AI = {
 	trigger = {
 		is_country_type = default
-		NOR = {
-			has_country_flag = synthetic_empire
-			has_authority = auth_machine_intelligence
-		}
+		is_synthetic_empire = no
 		FROM = { is_country_type = default }
 	}
 	opinion = {
@@ -731,10 +726,7 @@ opinion_policy_AI = {
 		}
 		modifier = {
 			add = 5
-			OR = {
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
-			}
+			is_spiritualist = yes
 			OR = {
 				is_megacorp = yes
 				has_valid_civic = civic_corporate_dominion
@@ -749,10 +741,7 @@ opinion_policy_AI = {
 opinion_policy_robotic_workers = {
 	trigger = {
 		is_country_type = default
-		NOR = {
-			has_country_flag = synthetic_empire
-			has_authority = auth_machine_intelligence
-		}
+		is_synthetic_empire = no
 		FROM = { is_country_type = default }
 	}
 	opinion = {
@@ -797,10 +786,7 @@ synth_exterminators = {
 			is_country_type = ascended_empire
 			is_country_type = lost_empire
 		}
-		OR = {
-			has_country_flag = synthetic_empire
-			has_authority = auth_machine_intelligence
-		}
+		is_synthetic_empire = yes
 		FROM = {
 			OR = {
 				is_country_type = default
@@ -811,10 +797,7 @@ synth_exterminators = {
 				has_policy_flag = ai_outlawed
 				has_policy_flag = robots_outlawed
 			}
-			NOR = {
-				has_country_flag = synthetic_empire
-				has_authority = auth_machine_intelligence
-			}
+			is_synthetic_empire = no
 		}
 	}
 	opinion = {
@@ -829,10 +812,7 @@ synth_enslavers = {
 			is_country_type = ascended_empire
 			is_country_type = lost_empire
 		}
-		OR = {
-			has_country_flag = synthetic_empire
-			has_authority = auth_machine_intelligence
-		}
+		is_synthetic_empire = yes
 		FROM = {
 			OR = {
 				is_country_type = default
@@ -844,10 +824,7 @@ synth_enslavers = {
 				has_technology = tech_synthetic_workers
 				has_technology = tech_sapient_ai
 			}
-			NOR = {
-				has_country_flag = synthetic_empire
-				has_authority = auth_machine_intelligence
-			}
+			is_synthetic_empire = no
 		}
 	}
 	opinion = {
@@ -1050,8 +1027,7 @@ technophobic_bigots = {
 				is_country_type = default
 				is_country_type = ascended_empire
 				is_country_type = lost_empire
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
+				is_fallen_empire = yes
 			}
 			is_spiritualist = yes
 		}
@@ -1097,10 +1073,8 @@ triggered_opinion_nihilistic_acquisition = {
 				is_country_type = lost_empire
 			}
 			AND = {
-				OR = {
-					is_country_type = awakened_fallen_empire
-					is_country_type = fallen_empire
-				}
+				
+					is_fallen_empire = yes
 				has_ethic = ethic_fanatic_xenophile
 				is_mechanical_empire = no
 				is_cyborg_empire = no
@@ -1202,8 +1176,7 @@ triggered_opinion_colossus = {
 	trigger = {
 		OR = {
 			is_country_type = default
-			is_country_type = awakened_fallen_empire
-			is_country_type = fallen_empire
+			is_fallen_empire = yes
 			is_country_type = ascended_empire
 			is_country_type = lost_empire
 		}
@@ -1232,17 +1205,13 @@ triggered_opinion_colossus = {
 		}
 		modifier = {
 			add = -20
-			OR = {
-				is_country_type = awakened_fallen_empire
-				is_country_type = fallen_empire
-			}
+			
+				is_fallen_empire = yes
 		}
 		modifier = {
 			add = -20
-			OR = {
-				is_country_type = awakened_fallen_empire
-				is_country_type = fallen_empire
-			}
+			
+				is_fallen_empire = yes
 			has_ethic = ethic_fanatic_xenophile
 		}
 	}
@@ -1253,8 +1222,7 @@ triggered_opinion_consecrated_worlds = {
 		FROM = { has_ascension_perk = ap_consecrated_worlds }
 		OR = {
 			is_country_type = default
-			is_country_type = awakened_fallen_empire
-			is_country_type = fallen_empire
+			is_fallen_empire = yes
 			is_country_type = ascended_empire
 			is_country_type = lost_empire
 		}
@@ -1354,10 +1322,8 @@ triggered_opinion_interstellar_dominion = {
 
 triggered_opinion_galactic_contender = {
 	trigger = {
-		OR = {
-			is_country_type = awakened_fallen_empire
-			is_country_type = fallen_empire
-		}
+		
+			is_fallen_empire = yes
 		FROM = {
 			OR = {
 				is_country_type = default
@@ -1395,8 +1361,7 @@ triggered_opinion_machine_worlds = {
 	trigger = {
 		OR = {
 			is_country_type = default
-			is_country_type = awakened_fallen_empire
-			is_country_type = fallen_empire
+			is_fallen_empire = yes
 			is_country_type = ascended_empire
 			is_country_type = lost_empire
 		}
@@ -1584,8 +1549,7 @@ triggered_opinion_city_worlds = {
 	trigger = {
 		OR = {
 			is_country_type = default
-			is_country_type = awakened_fallen_empire
-			is_country_type = fallen_empire
+			is_fallen_empire = yes
 			is_country_type = ascended_empire
 			is_country_type = lost_empire
 		}
@@ -1630,8 +1594,7 @@ triggered_opinion_xeno_compatibility = {
 	trigger = {
 		OR = {
 			is_country_type = default
-			is_country_type = awakened_fallen_empire
-			is_country_type = fallen_empire
+			is_fallen_empire = yes
 			is_country_type = ascended_empire
 			is_country_type = lost_empire
 		}
@@ -1670,10 +1633,7 @@ opinion_tech_emotion_emulators = {
 			is_country_type = ascended_empire
 			is_country_type = lost_empire
 		}
-		NOR = {
-			has_country_flag = synthetic_empire
-			has_authority = auth_machine_intelligence
-		}
+		is_synthetic_empire = no
 		FROM = {
 			has_authority = auth_machine_intelligence
 			has_technology = tech_emotion_emulators_2
@@ -1755,15 +1715,12 @@ enslaved_our_pops = {
 		}
 		modifier = {
 			add = -30
-			OR = {
-				has_ethic = ethic_xenophobe
-				has_ethic = ethic_fanatic_xenophobe
-			}
+			is_xenophobe = yes
 			NOR = {
 				has_valid_civic = "civic_slaver_guilds"
 				has_valid_civic = "civic_indentured_assets"
+				is_same_species = FROM
 			}
-			NOT = { is_same_species = FROM }
 		}
 	}
 }
@@ -1790,10 +1747,7 @@ displacing_our_pops = {
 		base = -20
 		modifier = {
 			add = -20
-			OR = {
-				has_ethic = ethic_xenophobe
-				has_ethic = ethic_fanatic_xenophobe
-			}
+			is_xenophobe = yes
 			NOT = { is_same_species = FROM }
 		}
 	}
@@ -1821,10 +1775,7 @@ purging_our_pops = {
 		base = -100
 		modifier = {
 			add = -25
-			OR = {
-				has_ethic = ethic_xenophobe
-				has_ethic = ethic_fanatic_xenophobe
-			}
+			is_xenophobe = yes
 			NOT = { is_same_species = FROM }
 		}
 	}

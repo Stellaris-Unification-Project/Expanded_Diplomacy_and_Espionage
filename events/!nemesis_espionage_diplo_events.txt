@@ -42,12 +42,12 @@ country_event = {
     desc = {
         text = espionage.1070.desc.unknown
         trigger = {
-            NOT = { has_country_flag = hostile_infiltrator_identified@from }
             NOR = {
-                is_unfriendly = yes
+	has_country_flag = hostile_infiltrator_identified@from
+	is_unfriendly = yes
                 is_xenophobe = yes
                 has_ascension_perk = ap_become_the_crisis
-            }
+}
         }
     }
     desc = {
@@ -129,13 +129,13 @@ country_event = {
             limit = {
                 has_nemesis = yes
                 any_spynetwork = {
-                    owner = { is_same_value = root }
+                    is_owned_by = root
                     target = { is_same_value = event_target:hostile_infiltration_country }
                 }
             }
             random_spynetwork = {
                 limit = {
-                    owner = { is_same_value = root }
+                    is_owned_by = root
                     target = { is_same_value = event_target:hostile_infiltration_country }
                 }
                 if = {
@@ -224,7 +224,7 @@ country_event = {
             has_nemesis = yes
             has_spynetwork = yes
             any_spynetwork = {
-                owner = { is_same_value = root }
+                is_owned_by = root
                 target = { is_same_value = event_target:hostile_infiltration_country }
                 has_espionage_asset_diplomacy = yes
             }
@@ -242,7 +242,7 @@ country_event = {
         }
         random_spynetwork = {
             limit = {
-                owner = { is_same_value = root }
+                is_owned_by = root
                 target = { is_same_value = event_target:hostile_infiltration_country }
             }
             destroy_espionage_asset_diplomacy = yes
@@ -363,7 +363,7 @@ country_event = {
 		text = espionage.1073.desc
 		trigger = {
 			any_spynetwork = {
-				owner = { is_same_value = root }
+				is_owned_by = root
                 target = { is_same_value = from }
 			}
 		}
@@ -373,7 +373,7 @@ country_event = {
 		trigger = {
 			NOT = {
 				any_spynetwork = {
-					owner = { is_same_value = root }
+					is_owned_by = root
 					target = { is_same_value = from }
 				}
 			}
@@ -597,7 +597,7 @@ country_event = {
     immediate = {
         random_spynetwork = {
             limit = {
-                owner = { is_same_value = root }
+                is_owned_by = root
                 target = { is_same_value = event_target:insidious_plot_spynetwork }
             }
             leader = { save_event_target_as = insidious_plot_spymaster }

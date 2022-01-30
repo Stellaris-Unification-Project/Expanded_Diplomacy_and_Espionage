@@ -103,10 +103,7 @@ action_offer_federation_association_status = {
 				AND = {
 					has_civic = civic_machine_terminator
 					from = {
-						OR = {
-							has_country_flag = synthetic_empire
-							has_authority = auth_machine_intelligence
-						}
+						is_synthetic_empire = yes
 					}
 				}
 			}
@@ -119,10 +116,7 @@ action_offer_federation_association_status = {
 				from = { NOT = { has_civic = civic_machine_terminator } }
 				AND = {
 					from = { has_civic = civic_machine_terminator }
-					OR = {
-						has_country_flag = synthetic_empire
-						has_authority = auth_machine_intelligence
-					}
+					is_synthetic_empire = yes
 				}
 			}
 		}

@@ -5194,8 +5194,10 @@ resolution_ascension_cyborg = {
 	}
 
 	allow = {
-		NOT = { is_active_resolution = "resolution_divinity_silence_the_soulless" }
-		NOT = { is_active_resolution = "resolution_divinity_a_defined_purpose" }
+		NOR = {
+			is_active_resolution = "resolution_divinity_silence_the_soulless"
+			is_active_resolution = "resolution_divinity_a_defined_purpose"
+		}
 		custom_tooltip = {
 			fail_text = "must_have_member_with_flesh_is_weak"
 			any_country = {
@@ -6625,10 +6627,8 @@ resolution_custodian_form_republic = {
 			factor = 0
 			is_subject = yes
 			overlord = { 
-				OR = {
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
-				}
+				
+					is_fallen_empire = yes
 			}
 		}
 		modifier = {
@@ -6796,10 +6796,8 @@ resolution_custodian_emergency_powers = {
 			factor = 0
 			is_subject = yes
 			overlord = { 
-				OR = {
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
-				}
+				
+					is_fallen_empire = yes
 			}
 		}
 		modifier = {
@@ -7001,10 +6999,8 @@ resolution_republic_form_empire = {
 			factor = 0
 			is_subject = yes
 			overlord = { 
-				OR = {
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
-				}
+				
+					is_fallen_empire = yes
 			}
 		}
 		modifier = {
@@ -7162,10 +7158,8 @@ resolution_galacticreforms_disband_republic = {
 			factor = 20
 			is_subject = yes
 			overlord = { 
-				OR = {
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
-				}
+				
+					is_fallen_empire = yes
 			}
 		}
 		modifier = {
@@ -7328,10 +7322,8 @@ resolution_republic_united_front = {
 			factor = 0
 			is_subject = yes
 			overlord = { 
-				OR = {
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
-				}
+				
+					is_fallen_empire = yes
 			}
 		}
 		modifier = {
@@ -7534,10 +7526,8 @@ resolution_emperor_galactic_mobilization = {
 			factor = 0
 			is_subject = yes
 			overlord = { 
-				OR = {
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
-				}
+				
+					is_fallen_empire = yes
 			}
 		}
 		modifier = {

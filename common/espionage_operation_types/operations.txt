@@ -218,8 +218,8 @@ operation_counter_spy = {
 			owner = { is_ai = no }
 			target = {
 				any_spynetwork = {
-					owner = { is_same_value = root.target }
-					target = { is_same_value = root.owner }
+					is_owned_by = root.target
+					target = { is_same_empire = root.owner }
 				}
 			}
 		}
@@ -947,8 +947,10 @@ operation_industrial_sabotage = {
 			fail_text = operation_industrial_sabotage_no_targets
 			target = {
 				any_owned_planet = {
-					NOT = { has_modifier = industrial_sabotage }
-					NOT = { planet_devastation > 75 }
+					NOR = {
+						has_modifier = industrial_sabotage
+						planet_devastation > 75
+					}
 				}
 			}
 		}

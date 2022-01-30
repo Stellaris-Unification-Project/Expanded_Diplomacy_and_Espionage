@@ -43,7 +43,7 @@ counter_espionage_operation_disguise_disadvantage = {
     }
 	NOT = {
 		any_spynetwork = {
-			owner = { is_same_value = root.from.target }
+			is_owned_by = root.from.target
 			target = { is_same_value = root }
 			NOR = {
                 has_espionage_asset = asset_bureaucrat

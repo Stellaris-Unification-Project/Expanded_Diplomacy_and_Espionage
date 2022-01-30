@@ -22,8 +22,10 @@ country_event = {
 		exists = root.ruler
 		any_relation = {
 			is_improving_relations_with = root
-			NOT = { has_country_flag = recent_envoy_event }
-			NOT = { is_same_species = root }
+			NOR = {
+				has_country_flag = recent_envoy_event
+				is_same_species = root
+			}
 			NOT = { is_same_species = root.ruler }
 			any_envoy = {
 				has_envoy_task = {
@@ -45,8 +47,10 @@ country_event = {
 		random_relation = {
 			limit = {
 				is_improving_relations_with = root
-				NOT = { has_country_flag = recent_envoy_event }
-				NOT = { is_same_species = root }
+				NOR = {
+					has_country_flag = recent_envoy_event
+					is_same_species = root
+				}
 				NOT = { is_same_species = root.ruler }
 				any_envoy = {
 					has_envoy_task = {
@@ -261,10 +265,14 @@ country_event = {
 		is_galactic_community_member = yes
 		any_country = {
 			is_part_of_galactic_council = yes
-			NOT = { is_same_species = root }
-			NOT = { is_in_federation_with = root }
-			NOT = { has_defensive_pact = root }
-			NOT = { is_overlord_to = root }
+			NOR = {
+				is_same_species = root
+				is_in_federation_with = root
+			}
+			NOR = {
+				has_defensive_pact = root
+				is_overlord_to = root
+			}
 			NOT = {
 				root = {
 					intel = {
@@ -314,10 +322,14 @@ country_event = {
 		random_country = {
 			limit = {
 				is_part_of_galactic_council = yes
-				NOT = { is_same_species = root }
-				NOT = { is_in_federation_with = root }
-				NOT = { has_defensive_pact = root }
-				NOT = { is_overlord_to = root }
+				NOR = {
+					is_same_species = root
+					is_in_federation_with = root
+				}
+				NOR = {
+					has_defensive_pact = root
+					is_overlord_to = root
+				}
 				NOT = {
 					root = {
 						intel = {
@@ -530,8 +542,10 @@ country_event = {
 			NOT = { has_country_flag = recent_envoy_event }
 		}
 		any_pop_faction = {
-			NOT = { is_pop_faction_type = progressive }
-			NOT = { is_pop_faction_type = prosperity }
+			NOR = {
+				is_pop_faction_type = progressive
+				is_pop_faction_type = prosperity
+			}
 			NOT = { is_pop_faction_type = xenoist }
 			is_owner_ethic_pop_faction = yes
 		}
@@ -604,8 +618,10 @@ country_event = {
 
 		random_pop_faction = {
 			limit = {
-				NOT = { is_pop_faction_type = progressive }
-				NOT = { is_pop_faction_type = prosperity }
+				NOR = {
+					is_pop_faction_type = progressive
+					is_pop_faction_type = prosperity
+				}
 				NOT = { is_pop_faction_type = xenoist }
 				is_owner_ethic_pop_faction = yes
 			}
@@ -1131,8 +1147,10 @@ country_event = {
 		}
 		any_country = {
 			is_galactic_community_member = yes
-			NOT = { is_in_federation_with = root }
-			NOT = { is_overlord_to = root }
+			NOR = {
+				is_in_federation_with = root
+				is_overlord_to = root
+			}
 			NOT = { root = { is_overlord_to = prev } }
 			OR = {
 				species_portrait = human
@@ -1238,9 +1256,9 @@ country_event = {
 		is_country_type = default
 		OR = {
 			exists = event_target:scandalous_insult_country
-			AND = {
-				NOT = { exists = event_target:scandalous_insult_country }
-				NOT = { has_country_flag = recent_envoy_event }
+			NOR = {
+				exists = event_target:scandalous_insult_country 
+				has_country_flag = recent_envoy_event 
 			}
 		}
 		OR = {
